@@ -7,12 +7,12 @@
     tools:context=".view.ProfileFragment">
 
     <ImageView
-        android:layout_width="600dp"
-        android:layout_height="600dp"
+        android:layout_width="1000dp"
+        android:layout_height="1000dp"
         android:background="@drawable/profile_background"
         app:layout_constraintBottom_toBottomOf="@id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.682"
+        app:layout_constraintHorizontal_bias="1"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="ContentDescription" />
 
@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.3" />
+        app:layout_constraintGuide_percent="0.7" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -74,37 +74,6 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:backgroundTint="#4CAF50"
-                        app:cardCornerRadius="20dp"
-                        app:layout_constraintBottom_toBottomOf="@id/textName"
-                        app:layout_constraintStart_toEndOf="@id/textName"
-                        app:layout_constraintTop_toTopOf="@id/textName">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="4dp"
-                            android:gravity="center"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:src="@drawable/star" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="4dp"
-                                android:text="16" />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
                     <TextView
                         android:id="@+id/textId"
                         android:layout_width="wrap_content"
@@ -143,37 +112,16 @@
                             android:orientation="vertical">
 
                             <TextView
+                                android:gravity="center"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Arkadaşlar"
+                                android:text="Bana Uygun\nİşler"
                                 android:textSize="18sp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="250"
-                                android:textSize="18sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="4dp"
-                            android:layout_marginVertical="10dp"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Takip Edilenler"
-                                android:textSize="18sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="860"
+                                android:text="350"
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -188,15 +136,16 @@
                             android:orientation="vertical">
 
                             <TextView
+                                android:gravity="center"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Hayranlar"
+                                android:text="Özgeçmiş Görüntüleme"
                                 android:textSize="18sp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="1.500"
+                                android:text="180"
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -235,7 +184,7 @@
                             android:id="@+id/image1Card2Row1"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:src="@drawable/video"
+                            android:src="@drawable/list"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
@@ -245,7 +194,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="8sp"
-                            android:text="Canlı yayınlarım"
+                            android:text="Özgeçmişim"
                             android:textSize="18sp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@id/image2Card2Row1"
@@ -327,7 +276,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="8sp"
-                            android:text="Gruplar"
+                            android:text="Arkadaşlarım"
                             android:textSize="18sp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@id/image2Card2Row3"
@@ -354,6 +303,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="30dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="30dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -376,7 +326,7 @@
                             android:id="@+id/image1Card3Row1"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:src="@drawable/wallet"
+                            android:src="@drawable/search"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
@@ -386,7 +336,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="8sp"
-                            android:text="Cüzdanım"
+                            android:text="Bana Uygun İşleri Ara"
                             android:textSize="18sp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@id/image2Card3Row1"
@@ -417,7 +367,7 @@
                             android:id="@+id/image1Card3Row2"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:src="@drawable/ranking"
+                            android:src="@drawable/bookmark"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
@@ -427,7 +377,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="8sp"
-                            android:text="Seviyem"
+                            android:text="Kaydedilen İlanlar"
                             android:textSize="18sp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@id/image2Card3Row2"
@@ -477,47 +427,6 @@
 
                         <ImageView
                             android:id="@+id/image2Card3Row3"
-                            android:layout_width="0dp"
-                            android:layout_height="30dp"
-                            android:src="@drawable/arrow_next"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            tools:ignore="ContentDescription" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <com.google.android.material.divider.MaterialDivider
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp" />
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8sp">
-
-                        <ImageView
-                            android:id="@+id/image1Card3Row4"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:src="@drawable/black_list"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            tools:ignore="ContentDescription" />
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="8sp"
-                            android:text="Kara liste"
-                            android:textSize="18sp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@id/image2Card3Row4"
-                            app:layout_constraintStart_toEndOf="@id/image1Card3Row4"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <ImageView
-                            android:id="@+id/image2Card3Row4"
                             android:layout_width="0dp"
                             android:layout_height="30dp"
                             android:src="@drawable/arrow_next"
