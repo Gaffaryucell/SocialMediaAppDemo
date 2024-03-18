@@ -4,6 +4,10 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
+    <style name="AppTheme" parent="Theme.Material3.Light">
+        <!-- Diğer stil özellikleri -->
+        <item name="android:statusBarColor">#e63f35</item>
+    </style>
 
     <style name="Theme.SocialMediaAppDemo" parent="Base.Theme.SocialMediaAppDemo" />
 </resources>
