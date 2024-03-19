@@ -1,13 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f4f4f4"
     tools:context=".view.HomeFragment">
 
-   <androidx.recyclerview.widget.RecyclerView
-       android:id="@+id/rvHome"
+   <androidx.core.widget.NestedScrollView
        android:layout_width="match_parent"
-       android:layout_height="match_parent"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+       android:layout_height="wrap_content">
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+
+         <TextView
+             android:id="@+id/tvTitle"
+             android:text="Aradığın İşi Bul"
+             android:textStyle="bold"
+             android:textColor="#8b91dd"
+             android:textAlignment="center"
+             android:textSize="30dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+         <androidx.appcompat.widget.SearchView
+             app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+             android:layout_marginVertical="8dp"
+             android:id="@+id/search_view"
+             android:background="@drawable/search_view_background_light"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginHorizontal="10dp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             />
+
+         <androidx.recyclerview.widget.RecyclerView
+             app:layout_constraintTop_toBottomOf="@+id/search_view"
+             app:layout_constraintStart_toStartOf="parent"
+             android:id="@+id/rvHome"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+
+         <androidx.appcompat.widget.AppCompatButton
+             android:id="@+id/btnMore"
+             app:layout_constraintTop_toBottomOf="@+id/rvHome"
+             android:background="@drawable/gray_rounded_bg"
+             android:layout_marginTop="8dp"
+             android:text="Tüm Kategorileri görüntüle"
+             android:textColor="#3e458a"
+             android:layout_marginHorizontal="15dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+
+
+         <LinearLayout
+             app:layout_constraintTop_toBottomOf="@+id/btnMore"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/site"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="Öne Çıkan İşler"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:text="Lider İşverenler halihazırda iş ve yetenekleri kullanıyor."
+                android:textSize="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvJob"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+         </LinearLayout>
+      </androidx.constraintlayout.widget.ConstraintLayout>
+   </androidx.core.widget.NestedScrollView>
+</FrameLayout>
