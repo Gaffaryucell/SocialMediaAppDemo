@@ -8,7 +8,7 @@
     tools:context=".view.EntryActivity">
 
     <ImageView
-        android:src="@drawable/app_icon"
+        android:src="@drawable/job"
         android:id="@+id/ivIcon"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
