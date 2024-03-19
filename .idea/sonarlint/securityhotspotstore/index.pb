@@ -11,3 +11,31 @@ Rapp/src/main/java/com/androiddevelopers/socialmediaappdemo/view/ProfileFragment
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 z
 Japp/src/main/java/com/androiddevelopers/socialmediaappdemo/MainActivity.kt,c\d\cd05f0b185499d97236e1eb01f3c997327de5083
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+Ä
+Papp/src/main/java/com/androiddevelopers/socialmediaappdemo/view/EntryActivity.kt,a\8\a8e885adc37e94b1809ff272c21f26435c295d76
+}
+Mapp/src/main/java/com/androiddevelopers/socialmediaappdemo/model/PostModel.kt,4\9\4995a1e1b9484f3bafcc5b43260c882db98b4c5f
+Å
+Qapp/src/main/java/com/androiddevelopers/socialmediaappdemo/adapter/HomeAdapter.kt,e\1\e1c88c5fbbc4a2ae1d81ffc39690a493fc3bf3c5
+w
+G.idea/sonarlint/issuestore/8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e,3\2\32813322c99a6c8a141ab2dc12bc10af3425f1b4
+Å
+Q.idea/sonarlint/securityhotspotstore/e/1/e1c88c5fbbc4a2ae1d81ffc39690a493fc3bf3c5,8\d\8d9a31f013cf8df5f6426433d0d70bce3d2a9e1e
+w
+G.idea/sonarlint/issuestore/4/9/4995a1e1b9484f3bafcc5b43260c882db98b4c5f,1\5\15e339e416214de25986a861595fcafa1ff45ace
+w
+G.idea/sonarlint/issuestore/a/8/a8e885adc37e94b1809ff272c21f26435c295d76,2\5\2504e7569dd95cfb88d4578aaead4cff048b6dc1
+Å
+Q.idea/sonarlint/securityhotspotstore/a/8/a8e885adc37e94b1809ff272c21f26435c295d76,3\3\33dc390e883209f65862153e511d63816c0c1a63
+Å
+Q.idea/sonarlint/securityhotspotstore/8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e,1\f\1fe398aa86b382486ed27d0a69bf92f68bd5edaa
+w
+G.idea/sonarlint/issuestore/e/1/e1c88c5fbbc4a2ae1d81ffc39690a493fc3bf3c5,c\1\c1d45c32c379d0df7aaecf7056dd42d258cecbae
+Å
+Q.idea/sonarlint/securityhotspotstore/c/d/cd05f0b185499d97236e1eb01f3c997327de5083,c\9\c9c09b1b14fe50241307690ad1015ee6b42fa8ba
+w
+G.idea/sonarlint/issuestore/c/d/cd05f0b185499d97236e1eb01f3c997327de5083,e\4\e45a537764f92a37d83d283842c4b0fb2a12fbc5
+Å
+Q.idea/sonarlint/securityhotspotstore/4/9/4995a1e1b9484f3bafcc5b43260c882db98b4c5f,2\2\22472c9f2c556a20d2eea8b1486398e9bdc69a18

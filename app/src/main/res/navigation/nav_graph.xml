@@ -3,17 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/signInActivity">
+    app:startDestination="@id/homeFragment">
 
-    <fragment
-        android:id="@+id/signInActivity"
-        android:name="com.androiddevelopers.socialmediaappdemo.view.SignInActivity"
-        android:label="fragment_sign_in_activity"
-        tools:layout="@layout/fragment_sign_in_activity" >
-        <action
-            android:id="@+id/action_signInActivity_to_homeFragment"
-            app:destination="@id/homeFragment" />
-    </fragment>
+
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.androiddevelopers.socialmediaappdemo.view.HomeFragment"
