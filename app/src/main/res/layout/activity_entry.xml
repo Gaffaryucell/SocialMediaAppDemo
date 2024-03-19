@@ -24,8 +24,10 @@
         android:textStyle="bold"
         android:textAlignment="center"
         android:textSize="30sp"
-        android:text="Sosyal Bağlantı"
-        android:layout_width="match_parent"
+        android:text="Yeni İşinize Girmenin En Kolay Yolu"
+        android:layout_width="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         android:layout_height="wrap_content"/>
     <TextView
         android:id="@+id/tvDetails"
@@ -33,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvTitle"
         android:textAlignment="center"
         android:textSize="18sp"
-        android:text="Arkadaşlarınız ve ailenizle bağlantıda kalın!"
+        android:text="İş, İstihdam ve Kariyer Fırsatlarını Bulun"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
